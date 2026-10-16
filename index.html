@@ -1,0 +1,727 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ECG 全部177例错误波形图</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f3f6f8;color:#183244;font:15px/1.6 system-ui,"Microsoft YaHei",sans-serif}
+header,main{max-width:1500px;margin:auto;padding:24px}header{background:white;border-bottom:1px solid #d9e1e7}h1{margin:0;font-size:28px}
+.meta{color:#627787}.controls{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}input,select{padding:9px;border:1px solid #c4d0da;border-radius:5px;background:white}
+input{min-width:280px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(440px,1fr));gap:20px}article{background:white;border:1px solid #dae3e9;border-radius:8px;padding:16px}
+h3{font-size:16px;margin:0 0 5px}.tag{font-size:13px;color:#526a7d}img{width:100%;height:auto;display:block}p{margin:10px 0 0;font-size:14px}
+details{background:white;padding:12px 16px;margin-bottom:18px}table{border-collapse:collapse}td,th{padding:6px 15px;border-bottom:1px solid #e0e7ec;text-align:left}
+a{color:#1e62a1}article[hidden]{display:none}@media(max-width:500px){.grid{grid-template-columns:1fr}header,main{padding:15px}}
+</style><header><h1>ECG 全部177例错误波形图</h1><div class="meta">当前冻结权重 · TEST27 · 97个最终FP / 80个新增FN（含2个RR新增FN）</div>
+<p>红色五角星：当前错误候选；绿色倒三角与点线：原始AP；蓝色上三角与虚线：专家标注。浅色区域：−150～+100ms波形输入窗。点击图片查看原图。</p>
+<p><a href="README.md">阅读口径说明</a> · <a href="case_descriptions.csv">全部逐例说明CSV</a> · <a href="report_captions.md">7个报告代表案例</a> · <a href="error_category_counts.csv">分类统计CSV</a></p></header><main>
+<details><summary>可核实分类与比例（按FP/FN各自为分母）</summary><table><tr><th>类别</th><th>数量</th><th>组内占比</th></tr><tr><td>FP｜最近专家标注前的额外候选</td><td>64</td><td>65.98%</td></tr><tr><td>FP｜最近专家标注后的额外候选</td><td>28</td><td>28.87%</td></tr><tr><td>FP｜同一专家心搏附近的重复候选</td><td>5</td><td>5.15%</td></tr><tr><td>FN｜专家参考位置超出波形输入窗</td><td>35</td><td>43.75%</td></tr><tr><td>FN｜模型阶段漏检，专家位置在窗口内</td><td>43</td><td>53.75%</td></tr><tr><td>FN｜RR Rule 2删除真实心搏候选</td><td>2</td><td>2.50%</td></tr></table>
+<p>这些分类描述匹配关系、专家位置与判决阶段，并不把所有FP直接诊断为伪迹。专家蓝标不要求在正向波峰顶点。</p></details>
+<div class="controls"><select id="kind"><option value="">全部 FP / FN</option><option>FP</option><option>FN</option></select><select id="record"><option value="">全部记录</option><option value="105">105</option><option value="106">106</option><option value="111">111</option><option value="121">121</option><option value="200">200</option><option value="203">203</option><option value="213">213</option><option value="214">214</option><option value="222">222</option><option value="228">228</option><option value="233">233</option><option value="slp60">slp60</option><option value="slp61">slp61</option></select>
+<select id="category"><option value="">全部类别</option><option value="FP_EARLY">FP｜最近专家标注前的额外候选</option><option value="FP_LATE">FP｜最近专家标注后的额外候选</option><option value="FN_WINDOW">FN｜专家参考位置超出波形输入窗</option><option value="FN_MODEL">FN｜模型阶段漏检，专家位置在窗口内</option><option value="FN_RR">FN｜RR Rule 2删除真实心搏候选</option><option value="FP_DUP">FP｜同一专家心搏附近的重复候选</option></select><input id="query" placeholder="搜索AP编号、专家类型、规则或说明"><span id="count"></span></div>
+<section class="grid"><article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap00360</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap00360.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap00360.png" alt="MITDB_105_FP_ap00360"></a>
+<p>候选位于最近专家标注前174.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap00455</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap00455.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap00455.png" alt="MITDB_105_FP_ap00455"></a>
+<p>候选位于最近专家标注前199.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap00869</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap00869.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap00869.png" alt="MITDB_105_FP_ap00869"></a>
+<p>候选位于最近专家标注前255.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_LATE">
+<h3>MITDB_105_FP_ap01423</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01423.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01423.png" alt="MITDB_105_FP_ap01423"></a>
+<p>候选位于最近专家标注后317.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap01425</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01425.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01425.png" alt="MITDB_105_FP_ap01425"></a>
+<p>候选位于最近专家标注前280.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_LATE">
+<h3>MITDB_105_FP_ap01677</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01677.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01677.png" alt="MITDB_105_FP_ap01677"></a>
+<p>候选位于最近专家标注后292.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_LATE">
+<h3>MITDB_105_FP_ap01681</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01681.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01681.png" alt="MITDB_105_FP_ap01681"></a>
+<p>候选位于最近专家标注后364.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap01686</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01686.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01686.png" alt="MITDB_105_FP_ap01686"></a>
+<p>候选位于最近专家标注前310.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_LATE">
+<h3>MITDB_105_FP_ap01698</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01698.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01698.png" alt="MITDB_105_FP_ap01698"></a>
+<p>候选位于最近专家标注后248.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap01716</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01716.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01716.png" alt="MITDB_105_FP_ap01716"></a>
+<p>候选位于最近专家标注前178.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap01752</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01752.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01752.png" alt="MITDB_105_FP_ap01752"></a>
+<p>候选位于最近专家标注前184.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap01796</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01796.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01796.png" alt="MITDB_105_FP_ap01796"></a>
+<p>候选位于最近专家标注前239.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap01860</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01860.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01860.png" alt="MITDB_105_FP_ap01860"></a>
+<p>候选位于最近专家标注前172.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_LATE">
+<h3>MITDB_105_FP_ap01866</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01866.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01866.png" alt="MITDB_105_FP_ap01866"></a>
+<p>候选位于最近专家标注后558.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap01881</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01881.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01881.png" alt="MITDB_105_FP_ap01881"></a>
+<p>候选位于最近专家标注前313.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_LATE">
+<h3>MITDB_105_FP_ap01891</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01891.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01891.png" alt="MITDB_105_FP_ap01891"></a>
+<p>候选位于最近专家标注后247.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap01897</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01897.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01897.png" alt="MITDB_105_FP_ap01897"></a>
+<p>候选位于最近专家标注前287.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap01902</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01902.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01902.png" alt="MITDB_105_FP_ap01902"></a>
+<p>候选位于最近专家标注前647.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_LATE">
+<h3>MITDB_105_FP_ap01907</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap01907.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap01907.png" alt="MITDB_105_FP_ap01907"></a>
+<p>候选位于最近专家标注后199.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap02342</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap02342.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap02342.png" alt="MITDB_105_FP_ap02342"></a>
+<p>候选位于最近专家标注前187.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap02386</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap02386.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap02386.png" alt="MITDB_105_FP_ap02386"></a>
+<p>候选位于最近专家标注前310.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_LATE">
+<h3>MITDB_105_FP_ap02388</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap02388.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap02388.png" alt="MITDB_105_FP_ap02388"></a>
+<p>候选位于最近专家标注后238.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap02393</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap02393.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap02393.png" alt="MITDB_105_FP_ap02393"></a>
+<p>候选位于最近专家标注前653.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap02458</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap02458.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap02458.png" alt="MITDB_105_FP_ap02458"></a>
+<p>候选位于最近专家标注前305.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_EARLY">
+<h3>MITDB_105_FP_ap02496</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap02496.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap02496.png" alt="MITDB_105_FP_ap02496"></a>
+<p>候选位于最近专家标注前244.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="105" data-category="FP_LATE">
+<h3>MITDB_105_FP_ap02622</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/105/MITDB_105_FP_ap02622.png" target="_blank"><img loading="lazy" src="images/FP/105/MITDB_105_FP_ap02622.png" alt="MITDB_105_FP_ap02622"></a>
+<p>候选位于最近专家标注后721.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_WINDOW">
+<h3>MITDB_105_FN_event01171_ap01165</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/105/MITDB_105_FN_event01171_ap01165.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01171_ap01165.png" alt="MITDB_105_FN_event01171_ap01165"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后111.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_MODEL">
+<h3>MITDB_105_FN_event01179_ap01172</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/105/MITDB_105_FN_event01179_ap01172.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01179_ap01172.png" alt="MITDB_105_FN_event01179_ap01172"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-21.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_MODEL">
+<h3>MITDB_105_FN_event01679_ap01680</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/105/MITDB_105_FN_event01679_ap01680.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01679_ap01680.png" alt="MITDB_105_FN_event01679_ap01680"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+80.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_MODEL">
+<h3>MITDB_105_FN_event01683_ap01685</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/105/MITDB_105_FN_event01683_ap01685.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01683_ap01685.png" alt="MITDB_105_FN_event01683_ap01685"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+89.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_MODEL">
+<h3>MITDB_105_FN_event01685_ap01689</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/105/MITDB_105_FN_event01685_ap01689.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01685_ap01689.png" alt="MITDB_105_FN_event01685_ap01689"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+10.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_MODEL">
+<h3>MITDB_105_FN_event01688_ap01693</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/105/MITDB_105_FN_event01688_ap01693.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01688_ap01693.png" alt="MITDB_105_FN_event01688_ap01693"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-20.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_MODEL">
+<h3>MITDB_105_FN_event01689_ap01694</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/105/MITDB_105_FN_event01689_ap01694.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01689_ap01694.png" alt="MITDB_105_FN_event01689_ap01694"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+86.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_MODEL">
+<h3>MITDB_105_FN_event01693_ap01699</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/105/MITDB_105_FN_event01693_ap01699.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01693_ap01699.png" alt="MITDB_105_FN_event01693_ap01699"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-24.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_MODEL">
+<h3>MITDB_105_FN_event01701_ap01711</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/105/MITDB_105_FN_event01701_ap01711.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01701_ap01711.png" alt="MITDB_105_FN_event01701_ap01711"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+52.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_RR">
+<h3>MITDB_105_FN_event01705_ap01717</h3><div class="tag">FN｜RR Rule 2删除真实心搏候选</div>
+<a href="images/FN/105/MITDB_105_FN_event01705_ap01717.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01705_ap01717.png" alt="MITDB_105_FN_event01705_ap01717"></a>
+<p>专家N类事件在模型阶段检出，随后关联候选被Rule 2删除。RR=201.0ms、参考RR=672.2ms，比值0.299；专家位置相对AP为-23.0ms，处于波形输入窗内。上一最终KEEP为FP（AP#1716），而相邻专家心搏间隔为628.0ms；保留FP成为时间锚点，使当前RR显得过短。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_MODEL">
+<h3>MITDB_105_FN_event01706_ap01718</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/105/MITDB_105_FN_event01706_ap01718.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01706_ap01718.png" alt="MITDB_105_FN_event01706_ap01718"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+90.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_WINDOW">
+<h3>MITDB_105_FN_event01716_ap01730</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/105/MITDB_105_FN_event01716_ap01730.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01716_ap01730.png" alt="MITDB_105_FN_event01716_ap01730"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后144.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_MODEL">
+<h3>MITDB_105_FN_event01720_ap01734</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/105/MITDB_105_FN_event01720_ap01734.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01720_ap01734.png" alt="MITDB_105_FN_event01720_ap01734"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-5.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_MODEL">
+<h3>MITDB_105_FN_event01841_ap01863</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/105/MITDB_105_FN_event01841_ap01863.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01841_ap01863.png" alt="MITDB_105_FN_event01841_ap01863"></a>
+<p>专家Q类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-31.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_WINDOW">
+<h3>MITDB_105_FN_event01850_ap01875</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/105/MITDB_105_FN_event01850_ap01875.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01850_ap01875.png" alt="MITDB_105_FN_event01850_ap01875"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后135.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_MODEL">
+<h3>MITDB_105_FN_event01855_ap01880</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/105/MITDB_105_FN_event01855_ap01880.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01855_ap01880.png" alt="MITDB_105_FN_event01855_ap01880"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+85.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_WINDOW">
+<h3>MITDB_105_FN_event01859_ap01886</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/105/MITDB_105_FN_event01859_ap01886.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01859_ap01886.png" alt="MITDB_105_FN_event01859_ap01886"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后112.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_MODEL">
+<h3>MITDB_105_FN_event01861_ap01890</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/105/MITDB_105_FN_event01861_ap01890.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01861_ap01890.png" alt="MITDB_105_FN_event01861_ap01890"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-20.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_WINDOW">
+<h3>MITDB_105_FN_event01870_ap01905</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/105/MITDB_105_FN_event01870_ap01905.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01870_ap01905.png" alt="MITDB_105_FN_event01870_ap01905"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后119.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_WINDOW">
+<h3>MITDB_105_FN_event01888_ap01926</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/105/MITDB_105_FN_event01888_ap01926.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event01888_ap01926.png" alt="MITDB_105_FN_event01888_ap01926"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后130.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_WINDOW">
+<h3>MITDB_105_FN_event02347_ap02385</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/105/MITDB_105_FN_event02347_ap02385.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event02347_ap02385.png" alt="MITDB_105_FN_event02347_ap02385"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后109.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_WINDOW">
+<h3>MITDB_105_FN_event02351_ap02394</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/105/MITDB_105_FN_event02351_ap02394.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event02351_ap02394.png" alt="MITDB_105_FN_event02351_ap02394"></a>
+<p>专家Q类事件最终漏检；其参考位置在AP后112.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_WINDOW">
+<h3>MITDB_105_FN_event02405_ap02449</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/105/MITDB_105_FN_event02405_ap02449.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event02405_ap02449.png" alt="MITDB_105_FN_event02405_ap02449"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后109.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_WINDOW">
+<h3>MITDB_105_FN_event02408_ap02452</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/105/MITDB_105_FN_event02408_ap02452.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event02408_ap02452.png" alt="MITDB_105_FN_event02408_ap02452"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后106.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_WINDOW">
+<h3>MITDB_105_FN_event02411_ap02457</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/105/MITDB_105_FN_event02411_ap02457.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event02411_ap02457.png" alt="MITDB_105_FN_event02411_ap02457"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后103.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_WINDOW">
+<h3>MITDB_105_FN_event02416_ap02464</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/105/MITDB_105_FN_event02416_ap02464.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event02416_ap02464.png" alt="MITDB_105_FN_event02416_ap02464"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后109.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。</p></article>
+<article data-kind="FN" data-record="105" data-category="FN_RR">
+<h3>MITDB_105_FN_event02447_ap02497</h3><div class="tag">FN｜RR Rule 2删除真实心搏候选</div>
+<a href="images/FN/105/MITDB_105_FN_event02447_ap02497.png" target="_blank"><img loading="lazy" src="images/FN/105/MITDB_105_FN_event02447_ap02497.png" alt="MITDB_105_FN_event02447_ap02497"></a>
+<p>专家N类事件在模型阶段检出，随后关联候选被Rule 2删除。RR=266.5ms、参考RR=654.5ms，比值0.407；专家位置相对AP为-22.5ms，处于波形输入窗内。上一最终KEEP为FP（AP#2496），而相邻专家心搏间隔为617.0ms；保留FP成为时间锚点，使当前RR显得过短。</p></article>
+<article data-kind="FP" data-record="106" data-category="FP_EARLY">
+<h3>MITDB_106_FP_ap00785</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/106/MITDB_106_FP_ap00785.png" target="_blank"><img loading="lazy" src="images/FP/106/MITDB_106_FP_ap00785.png" alt="MITDB_106_FP_ap00785"></a>
+<p>候选位于最近专家标注前340.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="106" data-category="FP_EARLY">
+<h3>MITDB_106_FP_ap00895</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/106/MITDB_106_FP_ap00895.png" target="_blank"><img loading="lazy" src="images/FP/106/MITDB_106_FP_ap00895.png" alt="MITDB_106_FP_ap00895"></a>
+<p>候选位于最近专家标注前233.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="106" data-category="FP_LATE">
+<h3>MITDB_106_FP_ap02013</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/106/MITDB_106_FP_ap02013.png" target="_blank"><img loading="lazy" src="images/FP/106/MITDB_106_FP_ap02013.png" alt="MITDB_106_FP_ap02013"></a>
+<p>候选位于最近专家标注后573.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FN" data-record="106" data-category="FN_WINDOW">
+<h3>MITDB_106_FN_event01033_ap01027</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/106/MITDB_106_FN_event01033_ap01027.png" target="_blank"><img loading="lazy" src="images/FN/106/MITDB_106_FN_event01033_ap01027.png" alt="MITDB_106_FN_event01033_ap01027"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后106.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FP" data-record="111" data-category="FP_EARLY">
+<h3>MITDB_111_FP_ap01737</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/111/MITDB_111_FP_ap01737.png" target="_blank"><img loading="lazy" src="images/FP/111/MITDB_111_FP_ap01737.png" alt="MITDB_111_FP_ap01737"></a>
+<p>候选位于最近专家标注前151.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="121" data-category="FP_EARLY">
+<h3>MITDB_121_FP_ap00300</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/121/MITDB_121_FP_ap00300.png" target="_blank"><img loading="lazy" src="images/FP/121/MITDB_121_FP_ap00300.png" alt="MITDB_121_FP_ap00300"></a>
+<p>候选位于最近专家标注前209.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FN" data-record="121" data-category="FN_MODEL">
+<h3>MITDB_121_FN_event01637_ap01632</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/121/MITDB_121_FN_event01637_ap01632.png" target="_blank"><img loading="lazy" src="images/FN/121/MITDB_121_FN_event01637_ap01632.png" alt="MITDB_121_FN_event01637_ap01632"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+99.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap00065</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap00065.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap00065.png" alt="MITDB_200_FP_ap00065"></a>
+<p>候选位于最近专家标注前298.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap00287</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap00287.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap00287.png" alt="MITDB_200_FP_ap00287"></a>
+<p>候选位于最近专家标注前215.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap00312</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap00312.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap00312.png" alt="MITDB_200_FP_ap00312"></a>
+<p>候选位于最近专家标注前218.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap00512</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap00512.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap00512.png" alt="MITDB_200_FP_ap00512"></a>
+<p>候选位于最近专家标注前233.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap00595</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap00595.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap00595.png" alt="MITDB_200_FP_ap00595"></a>
+<p>候选位于最近专家标注前228.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap00665</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap00665.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap00665.png" alt="MITDB_200_FP_ap00665"></a>
+<p>候选位于最近专家标注前234.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap00709</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap00709.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap00709.png" alt="MITDB_200_FP_ap00709"></a>
+<p>候选位于最近专家标注前240.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap00740</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap00740.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap00740.png" alt="MITDB_200_FP_ap00740"></a>
+<p>候选位于最近专家标注前254.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap00879</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap00879.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap00879.png" alt="MITDB_200_FP_ap00879"></a>
+<p>候选位于最近专家标注前435.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap00927</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap00927.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap00927.png" alt="MITDB_200_FP_ap00927"></a>
+<p>候选位于最近专家标注前182.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap01111</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap01111.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap01111.png" alt="MITDB_200_FP_ap01111"></a>
+<p>候选位于最近专家标注前162.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap01422</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap01422.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap01422.png" alt="MITDB_200_FP_ap01422"></a>
+<p>候选位于最近专家标注前211.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap01460</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap01460.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap01460.png" alt="MITDB_200_FP_ap01460"></a>
+<p>候选位于最近专家标注前319.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap01697</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap01697.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap01697.png" alt="MITDB_200_FP_ap01697"></a>
+<p>候选位于最近专家标注前175.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap01856</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap01856.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap01856.png" alt="MITDB_200_FP_ap01856"></a>
+<p>候选位于最近专家标注前365.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap02435</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap02435.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap02435.png" alt="MITDB_200_FP_ap02435"></a>
+<p>候选位于最近专家标注前230.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap02444</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap02444.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap02444.png" alt="MITDB_200_FP_ap02444"></a>
+<p>候选位于最近专家标注前373.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="200" data-category="FP_EARLY">
+<h3>MITDB_200_FP_ap02505</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/200/MITDB_200_FP_ap02505.png" target="_blank"><img loading="lazy" src="images/FP/200/MITDB_200_FP_ap02505.png" alt="MITDB_200_FP_ap02505"></a>
+<p>候选位于最近专家标注前166.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FN" data-record="200" data-category="FN_WINDOW">
+<h3>MITDB_200_FN_event00518_ap00520</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/200/MITDB_200_FN_event00518_ap00520.png" target="_blank"><img loading="lazy" src="images/FN/200/MITDB_200_FN_event00518_ap00520.png" alt="MITDB_200_FN_event00518_ap00520"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后148.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。</p></article>
+<article data-kind="FN" data-record="200" data-category="FN_WINDOW">
+<h3>MITDB_200_FN_event00529_ap00532</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/200/MITDB_200_FN_event00529_ap00532.png" target="_blank"><img loading="lazy" src="images/FN/200/MITDB_200_FN_event00529_ap00532.png" alt="MITDB_200_FN_event00529_ap00532"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后130.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="200" data-category="FN_WINDOW">
+<h3>MITDB_200_FN_event00608_ap00612</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/200/MITDB_200_FN_event00608_ap00612.png" target="_blank"><img loading="lazy" src="images/FN/200/MITDB_200_FN_event00608_ap00612.png" alt="MITDB_200_FN_event00608_ap00612"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后115.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="200" data-category="FN_WINDOW">
+<h3>MITDB_200_FN_event00705_ap00711</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/200/MITDB_200_FN_event00705_ap00711.png" target="_blank"><img loading="lazy" src="images/FN/200/MITDB_200_FN_event00705_ap00711.png" alt="MITDB_200_FN_event00705_ap00711"></a>
+<p>专家V类事件最终漏检；其参考位置在AP后128.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="200" data-category="FN_WINDOW">
+<h3>MITDB_200_FN_event00883_ap00894</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/200/MITDB_200_FN_event00883_ap00894.png" target="_blank"><img loading="lazy" src="images/FN/200/MITDB_200_FN_event00883_ap00894.png" alt="MITDB_200_FN_event00883_ap00894"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后149.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="200" data-category="FN_WINDOW">
+<h3>MITDB_200_FN_event00889_ap00901</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/200/MITDB_200_FN_event00889_ap00901.png" target="_blank"><img loading="lazy" src="images/FN/200/MITDB_200_FN_event00889_ap00901.png" alt="MITDB_200_FN_event00889_ap00901"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后106.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="200" data-category="FN_MODEL">
+<h3>MITDB_200_FN_event01650_ap01667</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/200/MITDB_200_FN_event01650_ap01667.png" target="_blank"><img loading="lazy" src="images/FN/200/MITDB_200_FN_event01650_ap01667.png" alt="MITDB_200_FN_event01650_ap01667"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+81.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap00070</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap00070.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap00070.png" alt="MITDB_203_FP_ap00070"></a>
+<p>候选位于最近专家标注后362.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_EARLY">
+<h3>MITDB_203_FP_ap00166</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap00166.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap00166.png" alt="MITDB_203_FP_ap00166"></a>
+<p>候选位于最近专家标注前169.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap00364</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap00364.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap00364.png" alt="MITDB_203_FP_ap00364"></a>
+<p>候选位于最近专家标注后293.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_EARLY">
+<h3>MITDB_203_FP_ap00647</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap00647.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap00647.png" alt="MITDB_203_FP_ap00647"></a>
+<p>候选位于最近专家标注前187.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_EARLY">
+<h3>MITDB_203_FP_ap00798</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap00798.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap00798.png" alt="MITDB_203_FP_ap00798"></a>
+<p>候选位于最近专家标注前152.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_EARLY">
+<h3>MITDB_203_FP_ap00893</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap00893.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap00893.png" alt="MITDB_203_FP_ap00893"></a>
+<p>候选位于最近专家标注前165.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap01480</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap01480.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap01480.png" alt="MITDB_203_FP_ap01480"></a>
+<p>候选位于最近专家标注后209.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap01481</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap01481.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap01481.png" alt="MITDB_203_FP_ap01481"></a>
+<p>候选位于最近专家标注后379.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap01486</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap01486.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap01486.png" alt="MITDB_203_FP_ap01486"></a>
+<p>候选位于最近专家标注后366.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap01515</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap01515.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap01515.png" alt="MITDB_203_FP_ap01515"></a>
+<p>候选位于最近专家标注后341.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_DUP">
+<h3>MITDB_203_FP_ap01538</h3><div class="tag">FP｜同一专家心搏附近的重复候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap01538.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap01538.png" alt="MITDB_203_FP_ap01538"></a>
+<p>候选距最近专家标注-26.0ms，仍在±150ms匹配容差内；该专家事件已由AP#1537匹配，当前候选形成额外FP。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_EARLY">
+<h3>MITDB_203_FP_ap01573</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap01573.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap01573.png" alt="MITDB_203_FP_ap01573"></a>
+<p>候选位于最近专家标注前257.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_EARLY">
+<h3>MITDB_203_FP_ap01594</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap01594.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap01594.png" alt="MITDB_203_FP_ap01594"></a>
+<p>候选位于最近专家标注前285.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap01596</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap01596.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap01596.png" alt="MITDB_203_FP_ap01596"></a>
+<p>候选位于最近专家标注后232.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap01597</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap01597.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap01597.png" alt="MITDB_203_FP_ap01597"></a>
+<p>候选位于最近专家标注后372.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_EARLY">
+<h3>MITDB_203_FP_ap01598</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap01598.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap01598.png" alt="MITDB_203_FP_ap01598"></a>
+<p>候选位于最近专家标注前264.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap01792</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap01792.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap01792.png" alt="MITDB_203_FP_ap01792"></a>
+<p>候选位于最近专家标注后293.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap01951</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap01951.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap01951.png" alt="MITDB_203_FP_ap01951"></a>
+<p>候选位于最近专家标注后337.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_DUP">
+<h3>MITDB_203_FP_ap02018</h3><div class="tag">FP｜同一专家心搏附近的重复候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap02018.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap02018.png" alt="MITDB_203_FP_ap02018"></a>
+<p>候选距最近专家标注-80.5ms，仍在±150ms匹配容差内；该专家事件已由AP#2017匹配，当前候选形成额外FP。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap02184</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap02184.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap02184.png" alt="MITDB_203_FP_ap02184"></a>
+<p>候选位于最近专家标注后284.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_EARLY">
+<h3>MITDB_203_FP_ap02190</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap02190.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap02190.png" alt="MITDB_203_FP_ap02190"></a>
+<p>候选位于最近专家标注前302.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_EARLY">
+<h3>MITDB_203_FP_ap02224</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap02224.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap02224.png" alt="MITDB_203_FP_ap02224"></a>
+<p>候选位于最近专家标注前282.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_DUP">
+<h3>MITDB_203_FP_ap02400</h3><div class="tag">FP｜同一专家心搏附近的重复候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap02400.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap02400.png" alt="MITDB_203_FP_ap02400"></a>
+<p>候选距最近专家标注-61.0ms，仍在±150ms匹配容差内；该专家事件已由AP#2399匹配，当前候选形成额外FP。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap02402</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap02402.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap02402.png" alt="MITDB_203_FP_ap02402"></a>
+<p>候选位于最近专家标注后271.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap02541</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap02541.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap02541.png" alt="MITDB_203_FP_ap02541"></a>
+<p>候选位于最近专家标注后292.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_EARLY">
+<h3>MITDB_203_FP_ap02545</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap02545.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap02545.png" alt="MITDB_203_FP_ap02545"></a>
+<p>候选位于最近专家标注前321.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="203" data-category="FP_LATE">
+<h3>MITDB_203_FP_ap02547</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/203/MITDB_203_FP_ap02547.png" target="_blank"><img loading="lazy" src="images/FP/203/MITDB_203_FP_ap02547.png" alt="MITDB_203_FP_ap02547"></a>
+<p>候选位于最近专家标注后235.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event00175_ap00167</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event00175_ap00167.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event00175_ap00167.png" alt="MITDB_203_FN_event00175_ap00167"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-21.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event00176_ap00168</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event00176_ap00168.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event00176_ap00168.png" alt="MITDB_203_FN_event00176_ap00168"></a>
+<p>专家V类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-112.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event00178_ap00171</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event00178_ap00171.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event00178_ap00171.png" alt="MITDB_203_FN_event00178_ap00171"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-22.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event00522_ap00515</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event00522_ap00515.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event00522_ap00515.png" alt="MITDB_203_FN_event00522_ap00515"></a>
+<p>专家V类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-22.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_WINDOW">
+<h3>MITDB_203_FN_event00650_ap00643</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/203/MITDB_203_FN_event00650_ap00643.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event00650_ap00643.png" alt="MITDB_203_FN_event00650_ap00643"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后140.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event00775_ap00770</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event00775_ap00770.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event00775_ap00770.png" alt="MITDB_203_FN_event00775_ap00770"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+80.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event00802_ap00799</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event00802_ap00799.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event00802_ap00799.png" alt="MITDB_203_FN_event00802_ap00799"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-20.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event00887_ap00890</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event00887_ap00890.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event00887_ap00890.png" alt="MITDB_203_FN_event00887_ap00890"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+95.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event00922_ap00929</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event00922_ap00929.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event00922_ap00929.png" alt="MITDB_203_FN_event00922_ap00929"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-25.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_WINDOW">
+<h3>MITDB_203_FN_event01065_ap01076</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/203/MITDB_203_FN_event01065_ap01076.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event01065_ap01076.png" alt="MITDB_203_FN_event01065_ap01076"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后113.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event01303_ap01318</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event01303_ap01318.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event01303_ap01318.png" alt="MITDB_203_FN_event01303_ap01318"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-5.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event01390_ap01406</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event01390_ap01406.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event01390_ap01406.png" alt="MITDB_203_FN_event01390_ap01406"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-28.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event01432_ap01448</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event01432_ap01448.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event01432_ap01448.png" alt="MITDB_203_FN_event01432_ap01448"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-8.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_WINDOW">
+<h3>MITDB_203_FN_event01476_ap01497</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/203/MITDB_203_FN_event01476_ap01497.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event01476_ap01497.png" alt="MITDB_203_FN_event01476_ap01497"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后136.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_WINDOW">
+<h3>MITDB_203_FN_event01477_ap01498</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/203/MITDB_203_FN_event01477_ap01498.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event01477_ap01498.png" alt="MITDB_203_FN_event01477_ap01498"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后132.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_WINDOW">
+<h3>MITDB_203_FN_event01559_ap01585</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/203/MITDB_203_FN_event01559_ap01585.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event01559_ap01585.png" alt="MITDB_203_FN_event01559_ap01585"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后131.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event01763_ap01795</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event01763_ap01795.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event01763_ap01795.png" alt="MITDB_203_FN_event01763_ap01795"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+90.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event01942_ap01984</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event01942_ap01984.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event01942_ap01984.png" alt="MITDB_203_FN_event01942_ap01984"></a>
+<p>专家V类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+16.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_WINDOW">
+<h3>MITDB_203_FN_event01968_ap02011</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/203/MITDB_203_FN_event01968_ap02011.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event01968_ap02011.png" alt="MITDB_203_FN_event01968_ap02011"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后111.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event02350_ap02410</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event02350_ap02410.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event02350_ap02410.png" alt="MITDB_203_FN_event02350_ap02410"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-27.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event02355_ap02416</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event02355_ap02416.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event02355_ap02416.png" alt="MITDB_203_FN_event02355_ap02416"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-20.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_WINDOW">
+<h3>MITDB_203_FN_event02388_ap02450</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/203/MITDB_203_FN_event02388_ap02450.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event02388_ap02450.png" alt="MITDB_203_FN_event02388_ap02450"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后109.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="203" data-category="FN_MODEL">
+<h3>MITDB_203_FN_event02676_ap02738</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/203/MITDB_203_FN_event02676_ap02738.png" target="_blank"><img loading="lazy" src="images/FN/203/MITDB_203_FN_event02676_ap02738.png" alt="MITDB_203_FN_event02676_ap02738"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-27.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FP" data-record="213" data-category="FP_EARLY">
+<h3>MITDB_213_FP_ap01803</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/213/MITDB_213_FP_ap01803.png" target="_blank"><img loading="lazy" src="images/FP/213/MITDB_213_FP_ap01803.png" alt="MITDB_213_FP_ap01803"></a>
+<p>候选位于最近专家标注前151.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="214" data-category="FP_LATE">
+<h3>MITDB_214_FP_ap00093</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/214/MITDB_214_FP_ap00093.png" target="_blank"><img loading="lazy" src="images/FP/214/MITDB_214_FP_ap00093.png" alt="MITDB_214_FP_ap00093"></a>
+<p>候选位于最近专家标注后399.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="222" data-category="FP_EARLY">
+<h3>MITDB_222_FP_ap01976</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/222/MITDB_222_FP_ap01976.png" target="_blank"><img loading="lazy" src="images/FP/222/MITDB_222_FP_ap01976.png" alt="MITDB_222_FP_ap01976"></a>
+<p>候选位于最近专家标注前189.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FN" data-record="222" data-category="FN_WINDOW">
+<h3>MITDB_222_FN_event01810_ap01802</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/222/MITDB_222_FN_event01810_ap01802.png" target="_blank"><img loading="lazy" src="images/FN/222/MITDB_222_FN_event01810_ap01802.png" alt="MITDB_222_FN_event01810_ap01802"></a>
+<p>专家j类事件最终漏检；其参考位置在AP后120.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="222" data-category="FN_WINDOW">
+<h3>MITDB_222_FN_event01980_ap01973</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/222/MITDB_222_FN_event01980_ap01973.png" target="_blank"><img loading="lazy" src="images/FN/222/MITDB_222_FN_event01980_ap01973.png" alt="MITDB_222_FN_event01980_ap01973"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后136.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FP" data-record="228" data-category="FP_EARLY">
+<h3>MITDB_228_FP_ap00010</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/228/MITDB_228_FP_ap00010.png" target="_blank"><img loading="lazy" src="images/FP/228/MITDB_228_FP_ap00010.png" alt="MITDB_228_FP_ap00010"></a>
+<p>候选位于最近专家标注前185.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。该AP属于前30个直接放行候选，p_real=1并非模型输出。</p></article>
+<article data-kind="FP" data-record="228" data-category="FP_EARLY">
+<h3>MITDB_228_FP_ap00012</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/228/MITDB_228_FP_ap00012.png" target="_blank"><img loading="lazy" src="images/FP/228/MITDB_228_FP_ap00012.png" alt="MITDB_228_FP_ap00012"></a>
+<p>候选位于最近专家标注前467.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。该AP属于前30个直接放行候选，p_real=1并非模型输出。</p></article>
+<article data-kind="FP" data-record="228" data-category="FP_EARLY">
+<h3>MITDB_228_FP_ap00052</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/228/MITDB_228_FP_ap00052.png" target="_blank"><img loading="lazy" src="images/FP/228/MITDB_228_FP_ap00052.png" alt="MITDB_228_FP_ap00052"></a>
+<p>候选位于最近专家标注前299.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="228" data-category="FP_LATE">
+<h3>MITDB_228_FP_ap00133</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/228/MITDB_228_FP_ap00133.png" target="_blank"><img loading="lazy" src="images/FP/228/MITDB_228_FP_ap00133.png" alt="MITDB_228_FP_ap00133"></a>
+<p>候选位于最近专家标注后563.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="228" data-category="FP_DUP">
+<h3>MITDB_228_FP_ap00329</h3><div class="tag">FP｜同一专家心搏附近的重复候选</div>
+<a href="images/FP/228/MITDB_228_FP_ap00329.png" target="_blank"><img loading="lazy" src="images/FP/228/MITDB_228_FP_ap00329.png" alt="MITDB_228_FP_ap00329"></a>
+<p>候选距最近专家标注-86.5ms，仍在±150ms匹配容差内；该专家事件已由AP#328匹配，当前候选形成额外FP。</p></article>
+<article data-kind="FP" data-record="228" data-category="FP_EARLY">
+<h3>MITDB_228_FP_ap00403</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/228/MITDB_228_FP_ap00403.png" target="_blank"><img loading="lazy" src="images/FP/228/MITDB_228_FP_ap00403.png" alt="MITDB_228_FP_ap00403"></a>
+<p>候选位于最近专家标注前274.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="228" data-category="FP_EARLY">
+<h3>MITDB_228_FP_ap00555</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/228/MITDB_228_FP_ap00555.png" target="_blank"><img loading="lazy" src="images/FP/228/MITDB_228_FP_ap00555.png" alt="MITDB_228_FP_ap00555"></a>
+<p>候选位于最近专家标注前155.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="228" data-category="FP_EARLY">
+<h3>MITDB_228_FP_ap00738</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/228/MITDB_228_FP_ap00738.png" target="_blank"><img loading="lazy" src="images/FP/228/MITDB_228_FP_ap00738.png" alt="MITDB_228_FP_ap00738"></a>
+<p>候选位于最近专家标注前253.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="228" data-category="FP_EARLY">
+<h3>MITDB_228_FP_ap01577</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/228/MITDB_228_FP_ap01577.png" target="_blank"><img loading="lazy" src="images/FP/228/MITDB_228_FP_ap01577.png" alt="MITDB_228_FP_ap01577"></a>
+<p>候选位于最近专家标注前155.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="228" data-category="FP_LATE">
+<h3>MITDB_228_FP_ap01664</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/228/MITDB_228_FP_ap01664.png" target="_blank"><img loading="lazy" src="images/FP/228/MITDB_228_FP_ap01664.png" alt="MITDB_228_FP_ap01664"></a>
+<p>候选位于最近专家标注后425.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="228" data-category="FP_DUP">
+<h3>MITDB_228_FP_ap01698</h3><div class="tag">FP｜同一专家心搏附近的重复候选</div>
+<a href="images/FP/228/MITDB_228_FP_ap01698.png" target="_blank"><img loading="lazy" src="images/FP/228/MITDB_228_FP_ap01698.png" alt="MITDB_228_FP_ap01698"></a>
+<p>候选距最近专家标注-66.0ms，仍在±150ms匹配容差内；该专家事件已由AP#1697匹配，当前候选形成额外FP。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_WINDOW">
+<h3>MITDB_228_FN_event00224_ap00226</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/228/MITDB_228_FN_event00224_ap00226.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event00224_ap00226.png" alt="MITDB_228_FN_event00224_ap00226"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后117.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_MODEL">
+<h3>MITDB_228_FN_event00281_ap00283</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/228/MITDB_228_FN_event00281_ap00283.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event00281_ap00283.png" alt="MITDB_228_FN_event00281_ap00283"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-25.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_MODEL">
+<h3>MITDB_228_FN_event00285_ap00287</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/228/MITDB_228_FN_event00285_ap00287.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event00285_ap00287.png" alt="MITDB_228_FN_event00285_ap00287"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-23.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_MODEL">
+<h3>MITDB_228_FN_event00289_ap00291</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/228/MITDB_228_FN_event00289_ap00291.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event00289_ap00291.png" alt="MITDB_228_FN_event00289_ap00291"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-21.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_MODEL">
+<h3>MITDB_228_FN_event00295_ap00297</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/228/MITDB_228_FN_event00295_ap00297.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event00295_ap00297.png" alt="MITDB_228_FN_event00295_ap00297"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-23.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_WINDOW">
+<h3>MITDB_228_FN_event00305_ap00307</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/228/MITDB_228_FN_event00305_ap00307.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event00305_ap00307.png" alt="MITDB_228_FN_event00305_ap00307"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后121.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_MODEL">
+<h3>MITDB_228_FN_event00323_ap00326</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/228/MITDB_228_FN_event00323_ap00326.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event00323_ap00326.png" alt="MITDB_228_FN_event00323_ap00326"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+33.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_MODEL">
+<h3>MITDB_228_FN_event00325_ap00332</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/228/MITDB_228_FN_event00325_ap00332.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event00325_ap00332.png" alt="MITDB_228_FN_event00325_ap00332"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-30.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_MODEL">
+<h3>MITDB_228_FN_event00327_ap00336</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/228/MITDB_228_FN_event00327_ap00336.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event00327_ap00336.png" alt="MITDB_228_FN_event00327_ap00336"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-26.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_WINDOW">
+<h3>MITDB_228_FN_event01626_ap01663</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/228/MITDB_228_FN_event01626_ap01663.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event01626_ap01663.png" alt="MITDB_228_FN_event01626_ap01663"></a>
+<p>专家V类事件最终漏检；其参考位置在AP后143.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_MODEL">
+<h3>MITDB_228_FN_event01672_ap01720</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/228/MITDB_228_FN_event01672_ap01720.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event01672_ap01720.png" alt="MITDB_228_FN_event01672_ap01720"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-34.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_MODEL">
+<h3>MITDB_228_FN_event01673_ap01722</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/228/MITDB_228_FN_event01673_ap01722.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event01673_ap01722.png" alt="MITDB_228_FN_event01673_ap01722"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-28.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_MODEL">
+<h3>MITDB_228_FN_event01675_ap01727</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/228/MITDB_228_FN_event01675_ap01727.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event01675_ap01727.png" alt="MITDB_228_FN_event01675_ap01727"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-27.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_MODEL">
+<h3>MITDB_228_FN_event01703_ap01761</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/228/MITDB_228_FN_event01703_ap01761.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event01703_ap01761.png" alt="MITDB_228_FN_event01703_ap01761"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为+72.5ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_MODEL">
+<h3>MITDB_228_FN_event01726_ap01792</h3><div class="tag">FN｜模型阶段漏检，专家位置在窗口内</div>
+<a href="images/FN/228/MITDB_228_FN_event01726_ap01792.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event01726_ap01792.png" alt="MITDB_228_FN_event01726_ap01792"></a>
+<p>专家N类事件在V11_B阶段检出，模型阶段起漏检；参考位置相对AP为-26.0ms，在−150～+100ms波形窗内。关联候选的低模型概率表明窗口内真实心搏未被放行。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_WINDOW">
+<h3>MITDB_228_FN_event01727_ap01793</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/228/MITDB_228_FN_event01727_ap01793.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event01727_ap01793.png" alt="MITDB_228_FN_event01727_ap01793"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后144.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_WINDOW">
+<h3>MITDB_228_FN_event01864_ap01934</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/228/MITDB_228_FN_event01864_ap01934.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event01864_ap01934.png" alt="MITDB_228_FN_event01864_ap01934"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后150.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。</p></article>
+<article data-kind="FN" data-record="228" data-category="FN_WINDOW">
+<h3>MITDB_228_FN_event01945_ap02019</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/228/MITDB_228_FN_event01945_ap02019.png" target="_blank"><img loading="lazy" src="images/FN/228/MITDB_228_FN_event01945_ap02019.png" alt="MITDB_228_FN_event01945_ap02019"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后126.5ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FN" data-record="233" data-category="FN_WINDOW">
+<h3>MITDB_233_FN_event00101_ap00091</h3><div class="tag">FN｜专家参考位置超出波形输入窗</div>
+<a href="images/FN/233/MITDB_233_FN_event00101_ap00091.png" target="_blank"><img loading="lazy" src="images/FN/233/MITDB_233_FN_event00101_ap00091.png" alt="MITDB_233_FN_event00101_ap00091"></a>
+<p>专家N类事件最终漏检；其参考位置在AP后118.0ms，超出波形输入的+100ms截止。该事实说明波形观察受限，不能单独证明模型无法识别。本样本RR输入引用了+100ms之外的位置，不能作为严格实时性能证据。</p></article>
+<article data-kind="FP" data-record="slp60" data-category="FP_EARLY">
+<h3>SLPDB_slp60_FP_ap09945</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/slp60/SLPDB_slp60_FP_ap09945.png" target="_blank"><img loading="lazy" src="images/FP/slp60/SLPDB_slp60_FP_ap09945.png" alt="SLPDB_slp60_FP_ap09945"></a>
+<p>候选位于最近专家标注前216.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="slp61" data-category="FP_EARLY">
+<h3>SLPDB_slp61_FP_ap02385</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/slp61/SLPDB_slp61_FP_ap02385.png" target="_blank"><img loading="lazy" src="images/FP/slp61/SLPDB_slp61_FP_ap02385.png" alt="SLPDB_slp61_FP_ap02385"></a>
+<p>候选位于最近专家标注前210.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="slp61" data-category="FP_EARLY">
+<h3>SLPDB_slp61_FP_ap02479</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/slp61/SLPDB_slp61_FP_ap02479.png" target="_blank"><img loading="lazy" src="images/FP/slp61/SLPDB_slp61_FP_ap02479.png" alt="SLPDB_slp61_FP_ap02479"></a>
+<p>候选位于最近专家标注前360.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="slp61" data-category="FP_EARLY">
+<h3>SLPDB_slp61_FP_ap02522</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/slp61/SLPDB_slp61_FP_ap02522.png" target="_blank"><img loading="lazy" src="images/FP/slp61/SLPDB_slp61_FP_ap02522.png" alt="SLPDB_slp61_FP_ap02522"></a>
+<p>候选位于最近专家标注前253.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="slp61" data-category="FP_EARLY">
+<h3>SLPDB_slp61_FP_ap02525</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/slp61/SLPDB_slp61_FP_ap02525.png" target="_blank"><img loading="lazy" src="images/FP/slp61/SLPDB_slp61_FP_ap02525.png" alt="SLPDB_slp61_FP_ap02525"></a>
+<p>候选位于最近专家标注前252.5ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="slp61" data-category="FP_LATE">
+<h3>SLPDB_slp61_FP_ap02625</h3><div class="tag">FP｜最近专家标注后的额外候选</div>
+<a href="images/FP/slp61/SLPDB_slp61_FP_ap02625.png" target="_blank"><img loading="lazy" src="images/FP/slp61/SLPDB_slp61_FP_ap02625.png" alt="SLPDB_slp61_FP_ap02625"></a>
+<p>候选位于最近专家标注后362.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article>
+<article data-kind="FP" data-record="slp61" data-category="FP_EARLY">
+<h3>SLPDB_slp61_FP_ap02820</h3><div class="tag">FP｜最近专家标注前的额外候选</div>
+<a href="images/FP/slp61/SLPDB_slp61_FP_ap02820.png" target="_blank"><img loading="lazy" src="images/FP/slp61/SLPDB_slp61_FP_ap02820.png" alt="SLPDB_slp61_FP_ap02820"></a>
+<p>候选位于最近专家标注前295.0ms，超出±150ms评价容差；最终保留为FP。局部形态需结合波形观察，不能仅凭距离判为伪迹。</p></article></section></main><script>
+const articles=[...document.querySelectorAll('article')];function filter(){const k=document.getElementById('kind').value,r=document.getElementById('record').value,c=document.getElementById('category').value,q=document.getElementById('query').value.toLowerCase();let n=0;
+for(const a of articles){const show=(!k||a.dataset.kind===k)&&(!r||a.dataset.record===r)&&(!c||a.dataset.category===c)&&(!q||a.textContent.toLowerCase().includes(q));a.hidden=!show;if(show)n++;}document.getElementById('count').textContent=`显示 ${n} / 177 例`;}
+for(const id of ['kind','record','category','query'])document.getElementById(id).addEventListener('input',filter);filter();</script></html>

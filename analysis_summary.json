@@ -1,0 +1,66 @@
+{
+  "cases": 177,
+  "final_fp": 97,
+  "added_fn": 80,
+  "model_stage_added_fn": 78,
+  "rr_added_fn": 2,
+  "forced_keep_fp": 2,
+  "model_output_fp_p_real_ge_0_90": 7,
+  "fn_expert_position_after_100ms": 35,
+  "fn_expert_position_inside_waveform": 45,
+  "fn_with_rr_input_index_after_100ms": 28,
+  "categories": [
+    {
+      "error_category": "FP_EARLY",
+      "类别": "FP｜最近专家标注前的额外候选",
+      "数量": 64,
+      "分母": 97,
+      "组内占比": "65.98%",
+      "全部177例占比": "36.16%"
+    },
+    {
+      "error_category": "FP_LATE",
+      "类别": "FP｜最近专家标注后的额外候选",
+      "数量": 28,
+      "分母": 97,
+      "组内占比": "28.87%",
+      "全部177例占比": "15.82%"
+    },
+    {
+      "error_category": "FP_DUP",
+      "类别": "FP｜同一专家心搏附近的重复候选",
+      "数量": 5,
+      "分母": 97,
+      "组内占比": "5.15%",
+      "全部177例占比": "2.82%"
+    },
+    {
+      "error_category": "FN_WINDOW",
+      "类别": "FN｜专家参考位置超出波形输入窗",
+      "数量": 35,
+      "分母": 80,
+      "组内占比": "43.75%",
+      "全部177例占比": "19.77%"
+    },
+    {
+      "error_category": "FN_MODEL",
+      "类别": "FN｜模型阶段漏检，专家位置在窗口内",
+      "数量": 43,
+      "分母": 80,
+      "组内占比": "53.75%",
+      "全部177例占比": "24.29%"
+    },
+    {
+      "error_category": "FN_RR",
+      "类别": "FN｜RR Rule 2删除真实心搏候选",
+      "数量": 2,
+      "分母": 80,
+      "组内占比": "2.50%",
+      "全部177例占比": "1.13%"
+    }
+  ],
+  "source_zip_sha256": "3e16e469b0c63db1c50d55eb58e135146bc146544379ec770eca827e61ac0f9d",
+  "classification_basis": "Verified matching, reference timing and deletion stage; not all morphology causes are established",
+  "all_unique_case_pngs_verified": true,
+  "model_or_gpu_inference_performed": false
+}

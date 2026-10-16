@@ -1,0 +1,25 @@
+{
+  "current_error_candidate": "red five-point star",
+  "all_original_action_points": "green downward triangles and green dotted vertical lines",
+  "expert_annotations": "blue upward triangles and blue dashed vertical lines",
+  "panels": [
+    "ECG_FILT local -0.5..+0.5 s",
+    "MEAN_TEST local -0.5..+0.5 s",
+    "ECG_FILT rhythm context -3..+3 s",
+    "ECG_FILT historical context -20..0 s"
+  ],
+  "waveform_input_window_seconds": [
+    -0.15,
+    0.1
+  ],
+  "input_last_sample_ms": 99.5,
+  "review_context_outside_input": "offline human review only, not additional model input",
+  "history_note": "20 s panel is review context; actual model history is previous 30 original AP windows",
+  "fn_star_note": "FN star marks the associated original AP; event identity is preserved separately",
+  "counts": {
+    "final_fp": 97,
+    "added_fn": 80,
+    "rr_added_fn_in_pack": 2
+  },
+  "review_policy": "brief_text contains verified facts; morphology types require visual review"
+}

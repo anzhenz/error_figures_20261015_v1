@@ -1,0 +1,1031 @@
+{
+  "status": "COMPLETE_177_CASES",
+  "source_zip_sha256": "3e16e469b0c63db1c50d55eb58e135146bc146544379ec770eca827e61ac0f9d",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4477,
+      "sha256": "479ec87162565f01e25004ea5a9a9c6ca591554f1c40873b26db3ba1428fde3a"
+    },
+    {
+      "path": "analysis_summary.json",
+      "bytes": 1935,
+      "sha256": "2aff924c231c9c451bd2047268acf79d62d7dcea3899ce73f3f29877c0d5506d"
+    },
+    {
+      "path": "assets/plot_font.ttf",
+      "bytes": 3556308,
+      "sha256": "ee38813ea00c3e32add4268fff7fff9e39417b4913cb13be2415164a47807cc2"
+    },
+    {
+      "path": "case_descriptions.csv",
+      "bytes": 143928,
+      "sha256": "cf2bd7de4d8d2e84cef2fcbeb020e677efabe0993d2d11a30bf9e7cd68f9e8a8"
+    },
+    {
+      "path": "error_category_counts.csv",
+      "bytes": 505,
+      "sha256": "d2c1459291fdd34b69a4f741051c39bd05e7f228c0b99dc9de3326de96f0c5f8"
+    },
+    {
+      "path": "error_counts_by_record.csv",
+      "bytes": 281,
+      "sha256": "1b04710913598af9aef6422e01d231487727e95cf141baa17b398e3969927906"
+    },
+    {
+      "path": "finalize_error_gallery.py",
+      "bytes": 16696,
+      "sha256": "0363e0cdbf394ad7053baecf15232d4ffcb51c24f15e463bd0e1dcc9d5cd04ac"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01171_ap01165.png",
+      "bytes": 425919,
+      "sha256": "016c817385e073874725b184a0da317efaea51cf44af24f4412a8ee46d3841f3"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01179_ap01172.png",
+      "bytes": 440308,
+      "sha256": "bdb53f5efb13a05192165c4a0623b9988c28b96110a050cc0a0c812e2774ae29"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01679_ap01680.png",
+      "bytes": 469950,
+      "sha256": "f64fdfa62b3abba96cfd114eab768e28fc2ef1fdd94a655b5e3f1dd75d651781"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01683_ap01685.png",
+      "bytes": 445974,
+      "sha256": "12c04af1f779fa08d95c3108d73dc2061d98dfffb137fca977f0bf9723725b25"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01685_ap01689.png",
+      "bytes": 435669,
+      "sha256": "9f16a9a0d26a0f48133ae3bc4a0b831e429cfe41f2b14f9942fe02397931bcbd"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01688_ap01693.png",
+      "bytes": 444425,
+      "sha256": "5b43a35ba2c931b724860cc11c5ac255cb695d2fb9e4e55c97622c8a87227c70"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01689_ap01694.png",
+      "bytes": 447216,
+      "sha256": "bb2f9224755dd3ced331525f9084effa4bde1cb7e1346535056485f8e6f4e671"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01693_ap01699.png",
+      "bytes": 454006,
+      "sha256": "46f57ec6c8d9047873c5d4fc9def8814fe49ae1ae3ae4d056fab4b43ba8ae4eb"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01701_ap01711.png",
+      "bytes": 461910,
+      "sha256": "81cb6a3bf2d5b1af8375c49e0dc773d668d233098e84513eedf40e0a4a8051e0"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01705_ap01717.png",
+      "bytes": 449491,
+      "sha256": "3c9cfe8e3adf1e7f109e28021e7a822244fe0666cdbbe760de71c7085882cfc7"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01706_ap01718.png",
+      "bytes": 436485,
+      "sha256": "222f52e6dc78f1fbc521eaeeb2eca2d446b89812a2b204cf68ee1cc75f896ae6"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01716_ap01730.png",
+      "bytes": 460793,
+      "sha256": "c217d20cea61d13e078e444d439a6ea3fb7e35ea9d36ebc776e3cf6ad5774684"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01720_ap01734.png",
+      "bytes": 471579,
+      "sha256": "8331c8199764865e18fc22874166ba1ed4359f61ea93a64ac065bed484fdee02"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01841_ap01863.png",
+      "bytes": 497651,
+      "sha256": "89f41a035773c0742276a2e09efd5a8dd4aa3ef62064fdc7c96cbfd30a42df12"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01850_ap01875.png",
+      "bytes": 476605,
+      "sha256": "061139658dbdbcc807a1be6ae6c051ec5e609ded1c98c77e0d0059251058c850"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01855_ap01880.png",
+      "bytes": 480936,
+      "sha256": "55594b2d0f9520c9972bf59257abc7e9dc830ae6b8510ad0c26cc1d35253c05e"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01859_ap01886.png",
+      "bytes": 493916,
+      "sha256": "b8a1cebcf38ea96d1fc2c043ce28e4b4742cd6364f566a272a61d9e0bd6307c5"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01861_ap01890.png",
+      "bytes": 501629,
+      "sha256": "4f6396da44333b36885772268a7f2357e0cccc3b44d956eceee9ec454e9b663a"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01870_ap01905.png",
+      "bytes": 486755,
+      "sha256": "8a22befc552dd37525b09a405fd20f4b005f3fd9a0fa707d58c90414d46d6250"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event01888_ap01926.png",
+      "bytes": 460782,
+      "sha256": "096b7a7b7e1f2cd3caaff7a36ce9eede75aad26d74f455bfa6d03ae32023020a"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event02347_ap02385.png",
+      "bytes": 451030,
+      "sha256": "4a4e6e6d759065b594761f0e80e64fee2d2296d2254eb97a7a66d56fc6a7c8d9"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event02351_ap02394.png",
+      "bytes": 444156,
+      "sha256": "aa7a3494e8ac8724dd1d3cf99c919c62ad579ae8bb6ff801e454e2e3a05bd96f"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event02405_ap02449.png",
+      "bytes": 448720,
+      "sha256": "772a3bec4053a2b79d291f0e26c27b26c96e33d0152f5a4ca9d5c4ded9937fe7"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event02408_ap02452.png",
+      "bytes": 467337,
+      "sha256": "f95b4fd1d36d076393ae3878dab19ff4c0a621bbb0c8c42cb4fdbfe4956dbec5"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event02411_ap02457.png",
+      "bytes": 475140,
+      "sha256": "ac477f7b8b94d8ff76e6300f7bd0ea402b5e147220655407cd8c950f0615b9a2"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event02416_ap02464.png",
+      "bytes": 462128,
+      "sha256": "368e78a10c624ccbcc040a96cf68f45f86f41f9317f5bb94cb72373282a84338"
+    },
+    {
+      "path": "images/FN/105/MITDB_105_FN_event02447_ap02497.png",
+      "bytes": 457841,
+      "sha256": "512bd7fd191d66c6fdac2f9a0a5f876066963196579a89776d11ad934902ffaf"
+    },
+    {
+      "path": "images/FN/106/MITDB_106_FN_event01033_ap01027.png",
+      "bytes": 408788,
+      "sha256": "58d4bc284c2c547035e720538dc2a19733de851fa0aad86590b1981016507038"
+    },
+    {
+      "path": "images/FN/121/MITDB_121_FN_event01637_ap01632.png",
+      "bytes": 450792,
+      "sha256": "e1ec18f560b8e020cf1541688ca8dc867a7a5b7357ad350ee87718a5dadc6eb7"
+    },
+    {
+      "path": "images/FN/200/MITDB_200_FN_event00518_ap00520.png",
+      "bytes": 466512,
+      "sha256": "5858859d449baeb0c2641dc59b83a54fb223b62de71ea5bce4cc9991edba41a1"
+    },
+    {
+      "path": "images/FN/200/MITDB_200_FN_event00529_ap00532.png",
+      "bytes": 467760,
+      "sha256": "26b5fae20aeb4bf7716566acf8f00c837cf938dd407217ec04a687d92920449a"
+    },
+    {
+      "path": "images/FN/200/MITDB_200_FN_event00608_ap00612.png",
+      "bytes": 442382,
+      "sha256": "51f4039992d1ff4e1f08ed43c7abf7da02c1f42b746aa1d949940724d8df4323"
+    },
+    {
+      "path": "images/FN/200/MITDB_200_FN_event00705_ap00711.png",
+      "bytes": 452829,
+      "sha256": "70294141c5aeca9f9cd7319c1bba8c170aa4a664bfc6932a9e60b98f706e1a07"
+    },
+    {
+      "path": "images/FN/200/MITDB_200_FN_event00883_ap00894.png",
+      "bytes": 452980,
+      "sha256": "fe300011bb6f3586608f3eedaca6bdeeca5bc5071f85003db8f229cbc438d6d3"
+    },
+    {
+      "path": "images/FN/200/MITDB_200_FN_event00889_ap00901.png",
+      "bytes": 448762,
+      "sha256": "d41d449f1fb59c0a031ced70bd23a18015e0b66b10c4b5a898c9e89767b5756b"
+    },
+    {
+      "path": "images/FN/200/MITDB_200_FN_event01650_ap01667.png",
+      "bytes": 443541,
+      "sha256": "bfc5f89cbbce64b1b47a6aaf44a8791d913e1bf3b2a1e80aa188c15e12ac30aa"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event00175_ap00167.png",
+      "bytes": 446024,
+      "sha256": "55348475c45b7d9449fbdabf61d124c3790e6a9e199a1301331a4a68d8c05a6c"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event00176_ap00168.png",
+      "bytes": 453405,
+      "sha256": "2ba2ed5f14f4dab4442b875640ed5938b6d9314dfa806ba092d781e4da264de4"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event00178_ap00171.png",
+      "bytes": 452806,
+      "sha256": "a2048f3d9ec537364b405e663fb1938d4d949fc143bc4deb634a408e00aab521"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event00522_ap00515.png",
+      "bytes": 447672,
+      "sha256": "d3e2b6f2f2cc4875121dea3fbb85b88a39029ed159c6a9b9251ee86ada5eecae"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event00650_ap00643.png",
+      "bytes": 450486,
+      "sha256": "b8c327084cf944998ffdca0426ec0d5b228aa9f75d053e4e7160082120b3359f"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event00775_ap00770.png",
+      "bytes": 464102,
+      "sha256": "2bb028cb22ea13b5b0151b8c3ff409f982f3375eff6692c3b42a3da5c7d981d0"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event00802_ap00799.png",
+      "bytes": 468575,
+      "sha256": "1b4b4130d8aa8a3bf835b5db565a9a5e9e202a910e20b4d8f5e7e6e942786fec"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event00887_ap00890.png",
+      "bytes": 502034,
+      "sha256": "d9e9843f587087e53dbf78039d2916e0374c1e0fddbe0f94a3ffc0215f2f804f"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event00922_ap00929.png",
+      "bytes": 430961,
+      "sha256": "6683c47adfc0a41822564fe6d2503a8aba837b0b2c3ecb9cb512e6f7f24def09"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event01065_ap01076.png",
+      "bytes": 459789,
+      "sha256": "39c438c306133cc4b18d91f2f2690737e2bffb847e09102096ae89e27e1fb644"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event01303_ap01318.png",
+      "bytes": 469780,
+      "sha256": "f35fa9fe4931d3f6467600ec564bf28038e86339bec69fbb4999b74801b5958f"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event01390_ap01406.png",
+      "bytes": 451741,
+      "sha256": "4389935350e2e126a9b000ee35b0d4dcaa0375da4de187dbb083418620975084"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event01432_ap01448.png",
+      "bytes": 512858,
+      "sha256": "b4a0c4e59e1ec7437c504a1b13e445572bf87b53b0e6a2408e70c3a63983cb4c"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event01476_ap01497.png",
+      "bytes": 437988,
+      "sha256": "62a14520ef233f293bf28d17f99a5a2b5f6b1ec489cf56b2c7ef33e7b067d60b"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event01477_ap01498.png",
+      "bytes": 450993,
+      "sha256": "bf956f21e2b968bbeeff1deeb9a0bc1eaea3dbed34887ae085daca8062ea680a"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event01559_ap01585.png",
+      "bytes": 455600,
+      "sha256": "163cd3700bfa5df5a5f8306108bab443d024e7800c72e910b18a2baa1500beb2"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event01763_ap01795.png",
+      "bytes": 460846,
+      "sha256": "c1a982352195684cad5037c2889c38c4ed8994e2f0e3492e8701e77754050fcd"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event01942_ap01984.png",
+      "bytes": 468316,
+      "sha256": "08ef44f4ec8a77c8b1194ee06851703a35c4f376af3a06e28199cea6db3ba7e3"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event01968_ap02011.png",
+      "bytes": 510790,
+      "sha256": "28e52b93397dac191d70fe0a2ac8d7b46106fab6566b9009fa69881e2986340b"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event02350_ap02410.png",
+      "bytes": 494028,
+      "sha256": "dc7ec81d49a53acdc695ed0ec7d149e769a3f6b75c8ecba7719f88381baf6700"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event02355_ap02416.png",
+      "bytes": 496942,
+      "sha256": "c7cc29598aa8c31686bf8ba5f95ea81bfcc1af3d3dcc076064566a18c39f1bfa"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event02388_ap02450.png",
+      "bytes": 468736,
+      "sha256": "04133147f8a015129893e02f1b300b6075fe0fc9c2e17026c63ca07eb05eb9dd"
+    },
+    {
+      "path": "images/FN/203/MITDB_203_FN_event02676_ap02738.png",
+      "bytes": 457197,
+      "sha256": "2440628520aa5af55e694505845a26691650e1456a955277e6e560dc4b0d03fe"
+    },
+    {
+      "path": "images/FN/222/MITDB_222_FN_event01810_ap01802.png",
+      "bytes": 438740,
+      "sha256": "590fc76d8ec4ec93c1253285cce638d28d27640c9227f0e6fba853417f3c802d"
+    },
+    {
+      "path": "images/FN/222/MITDB_222_FN_event01980_ap01973.png",
+      "bytes": 477213,
+      "sha256": "d1224f97ec7e12d66df0acfe152b3b2770e7c7825618496b4b7d86ddccbf1bfe"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event00224_ap00226.png",
+      "bytes": 435580,
+      "sha256": "82746c5cdbade33e87f80cef556b9c8418e2821d9a569c0a1ff5a3cbf8cd6c7d"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event00281_ap00283.png",
+      "bytes": 462999,
+      "sha256": "a10aa4f957b82bc817edbacf7967772e408f494ac47a47323c2cc97fde4bf229"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event00285_ap00287.png",
+      "bytes": 428493,
+      "sha256": "1f7497f53ca270dc50c626a35642fd5716a0d40abfc08e7f1279883fc35978a6"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event00289_ap00291.png",
+      "bytes": 418492,
+      "sha256": "873c1f654f9ba4bae3f82ddea88fd54553151f61b41b7fc9d130f3658bcf7992"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event00295_ap00297.png",
+      "bytes": 452457,
+      "sha256": "da2ff6a19f65bb959ad40074b3a27c52a09629df1785f36622dcbb4b05b4f2a2"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event00305_ap00307.png",
+      "bytes": 465408,
+      "sha256": "537ac6b2629f6ff46964b3533de263bb2e97b802f7790beee27105010c9d7247"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event00323_ap00326.png",
+      "bytes": 514700,
+      "sha256": "f99d8d9068c0fac70f28dd27ab763294aab1aa5f4765a6ffe21cbb225f750eee"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event00325_ap00332.png",
+      "bytes": 484089,
+      "sha256": "7fbfe5b3da55d5a3cf9f9f412f2d5da22be5609cf085467076dcb3e883b17132"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event00327_ap00336.png",
+      "bytes": 501294,
+      "sha256": "f54e825d4104ccd54fc2711b352daebfad4a546f8aadcfe9d64a2bf7a9d3cabd"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event01626_ap01663.png",
+      "bytes": 447288,
+      "sha256": "6e1f9f5eff61a10afe5f6028238a8ecdadf00ecf97a06ad8fe6a9ce13ed1ffe9"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event01672_ap01720.png",
+      "bytes": 485816,
+      "sha256": "c20a303c7c3885ffde28e7480535677d9db1aaaa0a05e1586cad650fb83d5485"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event01673_ap01722.png",
+      "bytes": 483204,
+      "sha256": "5f5fbb98f5c10cdf129fedec23a30f05d704ca8d16fcb6e543a139d9ec3a3463"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event01675_ap01727.png",
+      "bytes": 497065,
+      "sha256": "0c42882ad0d9040adc6dc4a6839cd13d34d2f7c295c7c7c09e57238903cf918b"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event01703_ap01761.png",
+      "bytes": 459161,
+      "sha256": "b9c5922e940d01383117c91c17366515084b4a81cdc7197b399f673a770653ac"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event01726_ap01792.png",
+      "bytes": 487820,
+      "sha256": "d4da1be3cb507349c5ad90cdedcbfde906cbc2288e4d07cf0ca1e1ac1a84b011"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event01727_ap01793.png",
+      "bytes": 457846,
+      "sha256": "99b470794e86a16747b4fc869913e218c80e6c9c05f73be1049897c2dc0858a1"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event01864_ap01934.png",
+      "bytes": 435189,
+      "sha256": "8f4a205e81e52ce396ee3f3b073369cbafa3c4bd2feec6d2791ff4ffed481edd"
+    },
+    {
+      "path": "images/FN/228/MITDB_228_FN_event01945_ap02019.png",
+      "bytes": 427401,
+      "sha256": "dadefad8647cef9397fdb8a76c575410edac1bf968769ff79254ca3d237f8a67"
+    },
+    {
+      "path": "images/FN/233/MITDB_233_FN_event00101_ap00091.png",
+      "bytes": 454119,
+      "sha256": "6bd65202d01630df2fff5e7cc1b18f34e743bf2e91bb6e4c9dc8779b4f482235"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap00360.png",
+      "bytes": 438151,
+      "sha256": "088996c0a7ab5fad848c9eec755b44d4c6e9b2102eb39930648e1cbc523d576a"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap00455.png",
+      "bytes": 429714,
+      "sha256": "12857f937e43b0b161f6b30d25a99fcfffd044c633b4e9ac56306e2533fe935a"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap00869.png",
+      "bytes": 473251,
+      "sha256": "98430675553a78557a274c0bc46ad5bfda6c931da3b1e969219090ebf6948d78"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01423.png",
+      "bytes": 449722,
+      "sha256": "1e5167545d0a7ae6ff6e775f3fbd4a41abd2a35d5b059c42df11f799391eab06"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01425.png",
+      "bytes": 444607,
+      "sha256": "4afa33b10e9e3079c72ddad5cfa744ed04d56b06bd88a6ffee55f78c8081ecb0"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01677.png",
+      "bytes": 464651,
+      "sha256": "a3e340ec33bc5df8a7f43d8bd4ba87ce9b73a5a9beeff316253620ce72229d17"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01681.png",
+      "bytes": 465930,
+      "sha256": "bf757c1f1a84262876b7a4d629b465042bd86097e4eb4e14550e750a5c935b7b"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01686.png",
+      "bytes": 459772,
+      "sha256": "d0c8113c5c8d65b4ea81f59f35350aea15e659f226b4b021b3afdcda228b6449"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01698.png",
+      "bytes": 457205,
+      "sha256": "b65e0185caf4752640fd1a41d18b5fce7235719407a7c53d87ea355bf171d78c"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01716.png",
+      "bytes": 453209,
+      "sha256": "5047a4870b656cf12372618de8b2ff42435ac103c3eb1ab06d2df08b59ce06f5"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01752.png",
+      "bytes": 449093,
+      "sha256": "bd5058da998a414666b0357d2e98543bacc2932c21a5e836eb619838be4f160b"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01796.png",
+      "bytes": 438807,
+      "sha256": "4e0f0285552796eef8c8ba5059afbddbc531199b82719bb953d106dd23d0d2de"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01860.png",
+      "bytes": 482165,
+      "sha256": "945fa8014c04d8a1760b2a25083c2544f5deab0a72eab21ddf373428045eeb32"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01866.png",
+      "bytes": 479488,
+      "sha256": "f2bd038a3f1bb252d870932656855f5f80b2dc71fc40350f36c049689f629a71"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01881.png",
+      "bytes": 491281,
+      "sha256": "3fd004e9b8d481685d2e4a83020fcbadc65be5e12f2e0512fb233dd181a25a7f"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01891.png",
+      "bytes": 499576,
+      "sha256": "6184c955f6bff51fe759ecfeeefae9340d93dc7602a259b70ae6a6d9c3e33653"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01897.png",
+      "bytes": 487189,
+      "sha256": "f5164a95470e2a03990e417b44a7f2cd4dbf0b7e5ee99b463796a222825023d7"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01902.png",
+      "bytes": 485674,
+      "sha256": "745324b72ef1f8a4f7d30d89b00d4c38dfaaf406163d5cde5581207b323254bf"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap01907.png",
+      "bytes": 490893,
+      "sha256": "85b7d95bee1e19b822477b44194be9e77be080265932c6750de27b4c56dee084"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap02342.png",
+      "bytes": 433004,
+      "sha256": "4dcdb22f7b9e5092bed5bf04964b0c79f5722032177b6a403af40069d04e94c0"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap02386.png",
+      "bytes": 464016,
+      "sha256": "6cbca40e5921cdeda3a3e78e4a051567069d32242ee4f924826ceb951ffb26cb"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap02388.png",
+      "bytes": 461612,
+      "sha256": "1812c77a8bf41d27ba617a946b3560160b004e968c0f9dd9731dd69a6de64878"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap02393.png",
+      "bytes": 444635,
+      "sha256": "38fd5fa8413e9ff722b5ca38dd972b213a7848d1431efe2891243ae963f94fd6"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap02458.png",
+      "bytes": 476291,
+      "sha256": "6e5ccd42e5c11708d1dcf2681b31946e056070e6d82e0aa79fd297d27327c233"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap02496.png",
+      "bytes": 458066,
+      "sha256": "de5897885112d4c19fddce3fd24f1150e80cb7c6c31cb294b20d9d505483b788"
+    },
+    {
+      "path": "images/FP/105/MITDB_105_FP_ap02622.png",
+      "bytes": 376967,
+      "sha256": "d2295178f5e907e7860d578dae9e68737697e18df9a7c5fed302852950aae58b"
+    },
+    {
+      "path": "images/FP/106/MITDB_106_FP_ap00785.png",
+      "bytes": 412924,
+      "sha256": "736e086017db5a1971fcbcecbfd0ab845876303bae03ace39c41046b3ba684e7"
+    },
+    {
+      "path": "images/FP/106/MITDB_106_FP_ap00895.png",
+      "bytes": 413187,
+      "sha256": "9f875fe9c80257e57d6ddd9f6cf2fa953bf487bca7ffc41c0c9abe48db1ad414"
+    },
+    {
+      "path": "images/FP/106/MITDB_106_FP_ap02013.png",
+      "bytes": 359825,
+      "sha256": "cd3f9a685bcdea6fe89d0623005f0e0a690fce93d061d4f7d07f5615b77cbc1e"
+    },
+    {
+      "path": "images/FP/111/MITDB_111_FP_ap01737.png",
+      "bytes": 445019,
+      "sha256": "9f915d6f7617243654a2c429422d6d537b71b3b0e14584b407081720d139a45d"
+    },
+    {
+      "path": "images/FP/121/MITDB_121_FP_ap00300.png",
+      "bytes": 403074,
+      "sha256": "1476e35460048a05c9c56f75978afb72835d725ba5c9c61a2bae32618fefe356"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap00065.png",
+      "bytes": 430794,
+      "sha256": "85ba1d1c0ff98bbd813e74fbc1313721c787c34d4633e5d676c15e0d7154ce28"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap00287.png",
+      "bytes": 433112,
+      "sha256": "eabb1e2283b1caa664efb721fd1b3bc2850d7d420b409dd899d3eb999cd2f740"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap00312.png",
+      "bytes": 442126,
+      "sha256": "7693c6fd9b831f34941e854515aecd06afe2221dac59bbc6d0a2a63633adcfc2"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap00512.png",
+      "bytes": 462629,
+      "sha256": "3ff44c359812dcc8fcc09d4c1bc923bbe404925cda4e6b34a1cd328bfdcf45ab"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap00595.png",
+      "bytes": 429256,
+      "sha256": "92112f5f9dac095c9b569bd4d312b28e9e32d29b696e649aa2ef74e8cb19984c"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap00665.png",
+      "bytes": 437427,
+      "sha256": "32bbada7e5a8b86487895ab9d63a1195fb65d385b72ebb2785316b0010b6b4c5"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap00709.png",
+      "bytes": 429595,
+      "sha256": "2aa33977c76f4d9025445e45332c77921744d1f88bcf5fef3f8daeae57a14277"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap00740.png",
+      "bytes": 427439,
+      "sha256": "8d1e3a58f91e51dc4b0749a47ca46009a29e8bc6840d57af683119f30651840b"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap00879.png",
+      "bytes": 448188,
+      "sha256": "d83d8c95d3ae48281de6e3103d52a1504f3934f2b0f3e2238c308e21cecc97dc"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap00927.png",
+      "bytes": 446269,
+      "sha256": "a235880c04814ef2a0f10d2419343bc4f6a2fc3f1c1852e0e1a1a2298d3506f8"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap01111.png",
+      "bytes": 404984,
+      "sha256": "aa56ea56db69b522833b0424f8cf3050e524f26d4df12a0a0729c7a0690f15d0"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap01422.png",
+      "bytes": 425081,
+      "sha256": "cbc464bc7076697be14caeb35fd6b6d6500883dd402d37bd14ff7fe11fd9ae6c"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap01460.png",
+      "bytes": 461268,
+      "sha256": "becc03f5c2081aa1eb3568f8e5235d5984070b82df4b1ae61cc9bff0f13b0491"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap01697.png",
+      "bytes": 445415,
+      "sha256": "a39019edefb0ee556c7924f337efea7224fa11746e9b228928369157da67a80e"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap01856.png",
+      "bytes": 450546,
+      "sha256": "0f147e4cbcd18da913c649d1c8322fa6393dfe0b0f78b0f72a62fcb8bd63cbb2"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap02435.png",
+      "bytes": 417931,
+      "sha256": "25a8247aba2bbfd1029f893824845c7491d799275c62c401ef95a75576db5fae"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap02444.png",
+      "bytes": 425512,
+      "sha256": "0bc15f9424bbb38f8a82e24573e3931f6bc99c0fc68a36a956077de6cc4e3d57"
+    },
+    {
+      "path": "images/FP/200/MITDB_200_FP_ap02505.png",
+      "bytes": 391509,
+      "sha256": "800aeac01c7ae58e528cf00de8e75eb859beed4dd5638fe08536f36a71c01968"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap00070.png",
+      "bytes": 474150,
+      "sha256": "64bcd416e1653e15f946a3b911a94ad3be2d162422e2869f33438896d475cffa"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap00166.png",
+      "bytes": 442288,
+      "sha256": "f323def9679426d0d30a6c3004c93bc3cc6b150f49ab6bb44d514a89d93e17fc"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap00364.png",
+      "bytes": 425770,
+      "sha256": "928a988458edc61ddd6709c58f6307109c1171c2666866315374878a69e50960"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap00647.png",
+      "bytes": 428781,
+      "sha256": "2d631fee3abc4be2d545c251a04ace9cf5fe76b2cd5984dd9de1e714c5db7e48"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap00798.png",
+      "bytes": 464236,
+      "sha256": "2f800ba3c100246a19f1e323d74b6a42d581a261fb62ceb881a975505e4c56ad"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap00893.png",
+      "bytes": 503353,
+      "sha256": "5b5e3298e6f76afbf7e9741d6ed2bf77288ec933e1d85918a5298b44a9f5882b"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap01480.png",
+      "bytes": 453052,
+      "sha256": "1a0183f485569b545a7d7c64a68d012e4f94f152d7637a3d19c15bd43a2ddb48"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap01481.png",
+      "bytes": 436301,
+      "sha256": "df573762deb32a78b060495c53b4403e414c7f7742b91795883f837e05d9c7cc"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap01486.png",
+      "bytes": 452323,
+      "sha256": "035fa6a85ebde87e38080fc88eeaf61bea49b6d992f4368f65c7f67c85241276"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap01515.png",
+      "bytes": 455320,
+      "sha256": "5e888946fca1c5c9f0c7200e4491768304e78ad6532cfbb1c9c354bd7d41c16c"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap01538.png",
+      "bytes": 485326,
+      "sha256": "67823f0878fbeddf578773870e0673352fc6df2f53d815bf6c1e578443ad8a71"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap01573.png",
+      "bytes": 458387,
+      "sha256": "788e0bb95f72cfe38c4e6b9b723eddd510fd80e70fcbb4cef603819edc350816"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap01594.png",
+      "bytes": 436074,
+      "sha256": "8f7513324b2b4d77950c2ba1d5544cc1e9e38817825bfe418b77a52d98171a5c"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap01596.png",
+      "bytes": 456579,
+      "sha256": "3bcaf9463326a495fd46c6bafcbad6320df6e98a164fafc7a9448a1c463e740d"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap01597.png",
+      "bytes": 459322,
+      "sha256": "74f2c634f0f1802e9dc324247a4bd9fb3bcf566c29295487023160e202946ec3"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap01598.png",
+      "bytes": 455401,
+      "sha256": "dba7475f32d9dc675867d29101798e92e22e32e036eba45c4efe0e964adbd4ef"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap01792.png",
+      "bytes": 455816,
+      "sha256": "26f637acdc9fd2ccc09b2ff13fcabea0841e0acd9341aa0f53371b4821df4b0f"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap01951.png",
+      "bytes": 471474,
+      "sha256": "9ff427d8ea6d4d558889661d81deaab1381d9436ee1037e46ea266e9196be788"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap02018.png",
+      "bytes": 502746,
+      "sha256": "9bc1c14ed4a9df9c9be02eb0a516229ae713f5cbb8000784eecd65588803003a"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap02184.png",
+      "bytes": 461045,
+      "sha256": "38cc5187b2134617c9b1fbcf6a38310393d767a7ad9472e6af2c49a368764e8c"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap02190.png",
+      "bytes": 487942,
+      "sha256": "3044fa65135c8e8f3135f14be07ca7646470ecf06d81028cbe760029f66c04e3"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap02224.png",
+      "bytes": 483741,
+      "sha256": "41ebc62190e25899c09bd4bde5f26f8e5abe25b30bbab83ecdeb023f07787f69"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap02400.png",
+      "bytes": 461110,
+      "sha256": "b7272d2eef9de1ccc9e3aa3df08da088e4d1eae34acb0470a0f7bface9d67fe0"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap02402.png",
+      "bytes": 474663,
+      "sha256": "bcc5250c1fbe76bb005b5421a8ad2e4f732b4caf3c6e1c81626eb1d8dc3287e2"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap02541.png",
+      "bytes": 427403,
+      "sha256": "8e870c88da00d05c7f312b04ae694f020da95494aa49e83580bc17ae2ed5ec8c"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap02545.png",
+      "bytes": 415908,
+      "sha256": "edaaeca37f567edb7c02e4a6668f377f2605ac724bbe78d52e88596a96134901"
+    },
+    {
+      "path": "images/FP/203/MITDB_203_FP_ap02547.png",
+      "bytes": 403928,
+      "sha256": "ac0c7c44dfa30c8f725371f8aa587af7f2b6f0822f7067545ab071f6b6a52d2d"
+    },
+    {
+      "path": "images/FP/213/MITDB_213_FP_ap01803.png",
+      "bytes": 465557,
+      "sha256": "20e63897591ec55ba8e43ea9172309fa1fb31a2a09c88cc1b3f7005b73ecff3d"
+    },
+    {
+      "path": "images/FP/214/MITDB_214_FP_ap00093.png",
+      "bytes": 487981,
+      "sha256": "500b88deab2dd2c15b7149ac7c520bdd17f3a7c0a7b2f04825d8341104ac4be1"
+    },
+    {
+      "path": "images/FP/222/MITDB_222_FP_ap01976.png",
+      "bytes": 457180,
+      "sha256": "9fe9fd21e381ea5eec4241b8deebcf3e1a5931da2bd97bc845ae3e09108504f7"
+    },
+    {
+      "path": "images/FP/228/MITDB_228_FP_ap00010.png",
+      "bytes": 439522,
+      "sha256": "261f51413365fdc516997cc424fb5ead54fccc7afc71b74ade5ad33b931a6bb7"
+    },
+    {
+      "path": "images/FP/228/MITDB_228_FP_ap00012.png",
+      "bytes": 428495,
+      "sha256": "70a6129237471a777f226729779715478622aae0b5dcba1c30f9fa327dc9b579"
+    },
+    {
+      "path": "images/FP/228/MITDB_228_FP_ap00052.png",
+      "bytes": 435766,
+      "sha256": "dd5c7d5cf88bc00df600a559c577dc61265446cc29d6d2af43418d8d7f72a268"
+    },
+    {
+      "path": "images/FP/228/MITDB_228_FP_ap00133.png",
+      "bytes": 407968,
+      "sha256": "03e4760eddb5532839a21b116bd22f82f26d3e695fcd862a1114a1e9b6f77157"
+    },
+    {
+      "path": "images/FP/228/MITDB_228_FP_ap00329.png",
+      "bytes": 461668,
+      "sha256": "1e8fd41a3cef1bf5b82b25198510f3e2b90b240cdc40db2d9a78d75d6c0b7dd8"
+    },
+    {
+      "path": "images/FP/228/MITDB_228_FP_ap00403.png",
+      "bytes": 456730,
+      "sha256": "f879a00f869947bb8d4eb34b8f44b113ff69149e91187a2c25be5c8dc6e99c6d"
+    },
+    {
+      "path": "images/FP/228/MITDB_228_FP_ap00555.png",
+      "bytes": 399983,
+      "sha256": "d09fae84a66377be5a5ae12ea9dc1fe0250a2cf7c380146c6c077a6b4b9d40ae"
+    },
+    {
+      "path": "images/FP/228/MITDB_228_FP_ap00738.png",
+      "bytes": 409270,
+      "sha256": "2eaad239d5131c706639f120ecaf4a5c3128303651f7a9028e7d038425e39d6c"
+    },
+    {
+      "path": "images/FP/228/MITDB_228_FP_ap01577.png",
+      "bytes": 468632,
+      "sha256": "2dde5d87b79de4b392ec6ed1bc37c11ab6d7da3111c257f57873d8169afacbd6"
+    },
+    {
+      "path": "images/FP/228/MITDB_228_FP_ap01664.png",
+      "bytes": 439683,
+      "sha256": "856251117281f17974827e6c4c3024c3eec2b4a6e555157a1b15f78c9e3b73c3"
+    },
+    {
+      "path": "images/FP/228/MITDB_228_FP_ap01698.png",
+      "bytes": 433565,
+      "sha256": "165288e5db7cf261b469dd29a7db8ed65165dab2f34c02e01145d7b02b9335fe"
+    },
+    {
+      "path": "images/FP/slp60/SLPDB_slp60_FP_ap09945.png",
+      "bytes": 429043,
+      "sha256": "e406d11219ba36fb9d14bf735a5bcab67068336555972f85aec268cb78cc6e40"
+    },
+    {
+      "path": "images/FP/slp61/SLPDB_slp61_FP_ap02385.png",
+      "bytes": 396398,
+      "sha256": "639b87a6ef05554a3a562f62af7ba716bf93e9d055abd9296c0e37e7b319773e"
+    },
+    {
+      "path": "images/FP/slp61/SLPDB_slp61_FP_ap02479.png",
+      "bytes": 418059,
+      "sha256": "423d5402a8cfe6dd7bd3898e313f66ca6abd2efb3ad6d6d3563eccf864f15755"
+    },
+    {
+      "path": "images/FP/slp61/SLPDB_slp61_FP_ap02522.png",
+      "bytes": 406992,
+      "sha256": "7fbb74df6914c439b51ff663f99e671d168a6e751c86b06a1e5e41a1ed946249"
+    },
+    {
+      "path": "images/FP/slp61/SLPDB_slp61_FP_ap02525.png",
+      "bytes": 413524,
+      "sha256": "8adbe163a048057aad51ac38ed83a06c424705ab95f8ebda2c527aa18bf6810b"
+    },
+    {
+      "path": "images/FP/slp61/SLPDB_slp61_FP_ap02625.png",
+      "bytes": 430862,
+      "sha256": "cd869c00601f12d853622f818b798e0d7973615785a2cc278a706f63236eda44"
+    },
+    {
+      "path": "images/FP/slp61/SLPDB_slp61_FP_ap02820.png",
+      "bytes": 426768,
+      "sha256": "e29381963500046ca3f7050655d220774304aafc13b29fffad5005925349c29c"
+    },
+    {
+      "path": "index.html",
+      "bytes": 102721,
+      "sha256": "f52eae34e474004085c868826ce9559de4147f2999ac0b7f74d1a8edd314374e"
+    },
+    {
+      "path": "plot_error_cases.py",
+      "bytes": 16941,
+      "sha256": "d42a45f4603cd4b2974e01ff659a5b44517cff09d2b6b278ec9fcc39e17ac3a1"
+    },
+    {
+      "path": "plot_standard.json",
+      "bytes": 978,
+      "sha256": "4b729f94510e8ba284d69ca1206e028c13aad4a4f368ecead76329b6bc9e8239"
+    },
+    {
+      "path": "report_captions.md",
+      "bytes": 2937,
+      "sha256": "c30e3bdace91a7a94f8fa85089df4cd0bbf0bd1aff3ec91207a3019660e65a37"
+    },
+    {
+      "path": "report_examples/01_QRS_like_high_confidence_FP.png",
+      "bytes": 429714,
+      "sha256": "12857f937e43b0b161f6b30d25a99fcfffd044c633b4e9ac56306e2533fe935a"
+    },
+    {
+      "path": "report_examples/01_QRS_like_high_confidence_FP.svg",
+      "bytes": 271127,
+      "sha256": "ef893fed51f9a33a0658f21ec0f3a8222f81e23d075edee282515e151b4ca1d3"
+    },
+    {
+      "path": "report_examples/02_visible_V_beat_FN.png",
+      "bytes": 468316,
+      "sha256": "08ef44f4ec8a77c8b1194ee06851703a35c4f376af3a06e28199cea6db3ba7e3"
+    },
+    {
+      "path": "report_examples/02_visible_V_beat_FN.svg",
+      "bytes": 295982,
+      "sha256": "c97184bad6372b0a6e1b2d6f573557805920992e82be07d9e646f2c431856688"
+    },
+    {
+      "path": "report_examples/03_duplicate_trigger_FP.png",
+      "bytes": 461668,
+      "sha256": "1e8fd41a3cef1bf5b82b25198510f3e2b90b240cdc40db2d9a78d75d6c0b7dd8"
+    },
+    {
+      "path": "report_examples/03_duplicate_trigger_FP.svg",
+      "bytes": 311402,
+      "sha256": "58f6e27fe7f8e433d7b62e9d1cb738f1a3a7b34d8bee341df9c2888b6d428112"
+    },
+    {
+      "path": "report_examples/04_reference_after_deadline_FN.png",
+      "bytes": 486755,
+      "sha256": "8a22befc552dd37525b09a405fd20f4b005f3fd9a0fa707d58c90414d46d6250"
+    },
+    {
+      "path": "report_examples/04_reference_after_deadline_FN.svg",
+      "bytes": 305689,
+      "sha256": "bffdd901e3322b0257608f808a71b862bf7291e4ebc0638223d6667c59eebad9"
+    },
+    {
+      "path": "report_examples/05_RR_false_anchor_FN_1717.png",
+      "bytes": 449491,
+      "sha256": "3c9cfe8e3adf1e7f109e28021e7a822244fe0666cdbbe760de71c7085882cfc7"
+    },
+    {
+      "path": "report_examples/05_RR_false_anchor_FN_1717.svg",
+      "bytes": 296852,
+      "sha256": "ac2d6114df3d4985e64a9d966ecafa0e362c592facb22c4366845109609f41c0"
+    },
+    {
+      "path": "report_examples/06_initial_forced_keep_FP.png",
+      "bytes": 439522,
+      "sha256": "261f51413365fdc516997cc424fb5ead54fccc7afc71b74ade5ad33b931a6bb7"
+    },
+    {
+      "path": "report_examples/06_initial_forced_keep_FP.svg",
+      "bytes": 287364,
+      "sha256": "94148abbc931b2fa13e0adbb4f282376110ba9435f1834470cb36b89a72788cb"
+    },
+    {
+      "path": "report_examples/07_RR_false_anchor_FN_2497.png",
+      "bytes": 457841,
+      "sha256": "512bd7fd191d66c6fdac2f9a0a5f876066963196579a89776d11ad934902ffaf"
+    },
+    {
+      "path": "report_examples/07_RR_false_anchor_FN_2497.svg",
+      "bytes": 294257,
+      "sha256": "4991e169032a4e7559da22a9a12784435880200975c0d1788c7fddbc6a7eb804"
+    },
+    {
+      "path": "representative_cases.csv",
+      "bytes": 2928,
+      "sha256": "3bc7737f5a16d60dcfb79ff25349e2208646bd1ab2cc133df318a91d4ae9269c"
+    },
+    {
+      "path": "source_summary.json",
+      "bytes": 37539,
+      "sha256": "1df9a037f52314bec91f132e6ed9f9a2b1490d7ad89535d49ae9ec975c5c6a51"
+    }
+  ],
+  "registry_self": {
+    "path": "file_registry.json",
+    "sha256": null,
+    "note": "Self-hash omitted to avoid recursion"
+  }
+}
